@@ -1,0 +1,239 @@
+*{
+    font-size: 18px;
+    font-family: "Rubik",sans-serif;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+}
+
+#Work{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.Work-img{
+    position: relative;
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+
+.Titles{
+    position: relative;
+   color: hsl(236, 100%, 87%);
+   padding-left: 1em;
+}
+.Titles::after{
+    
+    content: '...';
+    color: hsl(236, 100%, 87%);
+    position: absolute;
+    left: 80%;
+    
+}
+
+.Play{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.Play-img{
+    position: relative;
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+.Study{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.Study-img{
+    position: relative;
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+.Exercise{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.Exercise-img{
+    position: relative;
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+.Social{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.Social-img{
+    position: relative;
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+.SelfCare{
+    background-color: hsl(235, 46%, 20%);
+    position: absolute;
+    border-radius: 1rem;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
+.SelfCare-img{
+    position: relative;
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-x: 4em;
+    background-size: 60px;
+    border-radius: 1rem;
+}
+
+.Main-Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    min-height: 18em;
+}
+@media (max-width: 650px){
+    .Main-Container{
+        grid-template-columns: 1fr;
+        max-width: 15em;
+        min-height: 70em;
+        margin: auto; 
+    } 
+}
+
+#header-fd{
+    position: relative;
+    grid-row: span 2;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1em;
+}
+#header-tag{
+    position: absolute;
+    background-color: hsl(246, 80%, 60%);
+    height: 70%;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.links{
+    top: 13.5em;
+    left: 1em;
+    position: relative;
+    display: grid;
+    font-weight: 300;
+    color: hsl(235, 45%, 61%);
+    text-decoration: none;
+    grid-template-columns: 1fr;
+    
+
+    
+    
+    
+    
+}
+.links:hover{
+    color: hsl(236, 100%, 87%);
+}
+
+#header-tag img{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 0;
+    border-radius: 3em;
+    border: 3px solid white;
+}
+#header-tag p{
+    
+    font-weight: 300;
+    text-align: left;
+    padding-left: 1em;
+    color: hsl(236, 100%, 87%);
+
+}
+#header-tag span{
+    font-weight: 500;
+    color: hsl(236, 100%, 87%);
+    padding-bottom: 3em;
+    
+    
+    font-size: 1.5em;
+    
+    
+}
+.daily,
+.weekly,
+.monthly{
+   color: hsl(236, 100%, 87%);
+   position: absolute;
+   left: 0.5em;
+   top: 4em;
+}
+.biggerp{  
+    position: absolute;
+    font-weight: 500;
+    color: hsl(236, 100%, 87%);
+    left: 0.5em;
+    font-size: 1.5em;
+    bottom: 0.7em;
+}
+#Work:hover{
+    background-color: hsl(246, 80%, 60%);
+}
+.SelfCare:hover,
+.Social:hover,
+.Exercise:hover,
+.Study:hover,
+.Play:hover{
+    background-color: hsl(246, 80%, 60%);
+}
